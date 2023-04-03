@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Michail Mazo Home Page</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-    <p>This is going to be a new home page for Michail Mazo.</p>
+    <header>
+        <h1><a href="#about" onclick="selectChapter('about')">Michail Mazo</a></h1>
+        <nav>
+            <a href="#job" onclick="selectChapter('job')">Job</a>
+            <a href="#hobby" onclick="selectChapter('hobby')">Hobby</a>
+            <a href="#contact" onclick="selectChapter('contact')">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <article id="about">
+            Hi! I am a web developer based in Baden-Württenberg, Germany. During my career I have been working in web application development projects for such companies as Bosch, Web.de, GMX, Siemens, Gaggenau, etc.
+        </article>
+        <article id="job">
+            My points of interest primary include frontend development, user interface conception, design and development. JavaScript, HTML, CSS, Java, Spring are my favourites. My qualifications include: M.Sc. Digital Media and Computer Science, SpringSource Certified Spring Professional, Oracle Certified Associate, Java SE 7 Programmer, Professional Scrum Master I, Certified W3Schools´JAVASCRIPT Developer, Test DaF (19/20), TOEFL (243/300)
+        </article>
+        <article id="hobby">
+            My oldest and most passionate hobby is building ship models. I do not have much time for it now, but I was doing it since I can remember myself, really :)
+        </article>
+        <article id="contact">
+            Feel free to write me a line on <a href="mailto:michail.mazo@gmail.com">michail.mazo@gmail.com</a>
+            or find me at <a target="_blank" href="https://www.xing.com/profile/Michail_Mazo/cv">Xing</a>.
+        </article>
+    </main>
+    <footer>Copyright © 2008 - 2023 Michail Mazo</footer>
+    <img id="house" src="images/home.png" class="house"/>
+    <script type="text/javascript">
+        function selectChapter(chapterName) {
+            document.getElementById('house').src = 'images/' + chapterName + '.png';
+            document.querySelectorAll('article').forEach(elem => elem.style.display = 'none');
+            document.getElementById(chapterName).style.display = 'block';
+        }
+        selectChapter(window.location.hash ? window.location.hash.replace('#','') : 'about');
+    </script>
 </body>
 </html>

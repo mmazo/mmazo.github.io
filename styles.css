@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfdd;
+    background-image: url("/images/paper.png");
+    background-repeat: repeat;
+    font-family: 'Brush Script MT';
+    font-size: 1rem;
+}
+
+header {
+    padding: 0 1rem;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+header nav {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+
+header nav a {
+    padding: 0 0.5rem;
+}
+
+main {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-family: Georgia, serif;
+    width: 62%;
+    line-height: 2rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #000;
+    height: 32px;
+    background-color: #e0e0e0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 32px;
+    font-family: Georgia, serif;
+}
+
+.house {
+    position: absolute;
+    right: 1rem;
+    bottom: 32px;
+    height: calc(100% - 32px - 83px);
+    /*height: 62%;*/
+    width: auto;
+}
+
+article:focus {
+    background-color: aqua;
+}
