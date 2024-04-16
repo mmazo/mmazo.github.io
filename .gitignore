@@ -1,0 +1,56 @@
+# eclipse
+.project
+.classpath
+.settings/
+**/.factorypath
+
+# intellij
+.idea/
+*.iml
+
+# maven
+target/
+
+# other
+.checkstyle
+test-repo/
+repo/
+*.log
+responses.json
+
+## dependencies
+node_modules
+node
+
+## misc
+.sass-cache
+connect.lock
+coverage
+libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+typings
+e2e-screenshots
+test-report.*
+.env*.local
+.seleniumSessionId.txt
+.protractor-fail-fast
+protractorTestErrors*.xml
+
+## ESLint
+.eslintcache
+
+## yarn v2 (no zero installs)
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+## System Files
+.DS_Store
+Thumbs.db
+
+*.tgz

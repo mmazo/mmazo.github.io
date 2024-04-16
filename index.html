@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Michail Mazo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {background-color: #c8cece;}
+      body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
+      .w3-row-padding img {margin-bottom: 12px}
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar { width: 120px; background-color: #d3811e; }
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      #main { margin-left: 120px }
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+  <body>
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <a href="#" class="w3-bar-item w3-button w3-padding-large ">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a href="#job" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-briefcase w3-xxlarge"></i>
+        <p>JOB</p>
+      </a>
+      <a href="#hobby" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-ship w3-xxlarge"></i>
+        <p>HOBBY</p>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar  w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#job" class="w3-bar-item w3-button" style="width:25% !important">JOB</a>
+        <a href="#hobby" class="w3-bar-item w3-button" style="width:25% !important">HOBBY</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+      </div>
+    </div>
+    <main class="w3-padding-large" id="main">
+      <header class="w3-container w3-padding-32 w3-center " id="home">
+        <h1 class="w3-jumbo" style="color: #432f28"><span class="w3-hide-small">Hi, I'm</span> Michail Mazo.</h1>
+        <p>Professional software developer and hobby ship model builder.</p>
+      </header>
+      <div class="w3-padding-64 w3-content" id="job">
+        <h2>Software developer</h2>
+        <p>I am a web developer based in Baden-Württenberg, Germany.</p>
+        <p>During my career I have been working in web application development projects for such companies like Bosch, Web.de, GMX, Siemens, inovex.</p>
+        <p>My points of interest primary include frontend development, user interface conception, design and development. Backend development is also in focus of my interests. React, Agnular, TypeScript, JavaScript, HTML, CSS, Java, Spring are my favourites. </p>
+        <p>My qualifications include: M.Sc. Digital Media and Computer Science, UXQB Certified Professional for Usability and User Experience (CPUX-F), SpringSource Certified Spring Professional, Oracle Certified Associate, Java SE 7 Programmer, Professional Scrum Master I, Certified W3Schools´JAVASCRIPT Developer, Test DaF (19/20), TOEFL (243/300), Goethe-Zertifikat C2: Grosses Deutsches Sprachdiplom (91/100).</p>
+        <p>More details you can find on <a href="https://www.xing.com/profile/Michail_Mazo/cv" target="_blank">Xing</a>, <a href="https://www.linkedin.com/in/michail-mazo-130a69104" target="_blank">LinkedIn</a>,  <a href="https://github.com/mmazo" target="_blank">GitHub</a></p>
+      </div>
+      <div class="w3-padding-64 w3-content" id="hobby">
+        <h2>Ship model builder</h2>
+        <p>My oldest and most passionate hobby is building ship models. I do not have much time for it now, but I was doing it since I can remember myself, really :). Some of my models you can find on <a href="https://www.flickr.com/photos/10251884@N04/albums" target="_blank">flickr</a> or <a href="https://www.youtube.com/channel/UCvmp4-RUwqZ1zFPfqP-QBfQ" target="_blank">YouTube</a>.</p>
+      </div>
+      <div class="w3-padding-64 w3-content" id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          <a href="mailto:michail.mazo@gmail.com"><i class="fa fa-envelope w3-hover-opacity w3-xxlarge w3-margin-right"></i></a>
+          <a href="https://www.flickr.com/photos/10251884@N04/albums" target="_blank"><i class="fa fa-flickr w3-hover-opacity w3-xxlarge w3-margin-right"></i></a>
+          <a href="https://github.com/mmazo" target="_blank"><i class="fa fa-github w3-hover-opacity w3-xxlarge w3-margin-right"></i></a>
+          <a href="https://www.xing.com/profile/Michail_Mazo/cv" target="_blank"><i class="fa fa-xing w3-hover-opacity w3-xxlarge w3-margin-right"></i></a>
+          <a href="https://www.linkedin.com/in/michail-mazo-130a69104" target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i></a>
+        </p>
+      </div>
+      <footer class="w3-content w3-padding-64 w3-xlarge">
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
